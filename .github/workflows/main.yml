@@ -19,7 +19,7 @@ jobs:
         uses: boxcee/github-tag-action@prereleases
         with:
           release_branches: main
-          pre_release_branches: development,hotfix
+          pre_release_branches: development,hotfix/*
           github_token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Write Semver
