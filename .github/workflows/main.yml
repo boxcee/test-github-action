@@ -21,3 +21,7 @@ jobs:
           release_branches: main
           pre_release_branches: development
           github_token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Write Semver
+        run: |-
+          printf "%s" "${{ steps.semver.outputs.new_version }}" > semver.txt
