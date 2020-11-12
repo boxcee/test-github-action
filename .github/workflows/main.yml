@@ -16,7 +16,7 @@ jobs:
 
       - name: Bump Version & Push Tag
         id: semver
-        uses: boxcee/github-tag-action@prereleases
+        uses: mathieudutour/github-tag-action@v5
         with:
           release_branches: main
           pre_release_branches: development
