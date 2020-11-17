@@ -1,4 +1,4 @@
-name: Workflow Test
+name: Update Workflow
 
 on:
   - push
