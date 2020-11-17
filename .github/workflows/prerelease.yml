@@ -1,7 +1,9 @@
-name: Update Workflow
+name: Prerelease Workflow
 
 on:
-  - push
+  push:
+    ignore-branches:
+      - main
 
 jobs:
   update-version:

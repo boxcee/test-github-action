@@ -23,7 +23,6 @@ jobs:
           release_branches: main
           pre_release_branches: development,staging
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          dry_run: true
 
       - name: Create a GitHub release
         uses: actions/create-release@v1
