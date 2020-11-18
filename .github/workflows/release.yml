@@ -17,6 +17,6 @@ jobs:
           fetch-depth: 0
 
       - name: Bump Version & Push Tag
-        uses: boxcee/semantic-tag@v1.0.2
+        uses: boxcee/semantic-tag@v1.0.5
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
